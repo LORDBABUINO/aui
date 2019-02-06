@@ -435,7 +435,7 @@ select_pos_installer_script(){
           ;;
       esac
       echo "rm -r /etc/systemd/system/getty@tty1.service.d" >> ${MOUNTPOINT}/root/.profile
-      echo "rm \$0" >> ${MOUNTPOINT}/root/.profile
+      echo "rm ${MOUNTPOINT}/root/.profile" >> ${MOUNTPOINT}/root/.profile
       break
     else
       invalid_option
